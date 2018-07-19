@@ -78,7 +78,7 @@ func defaultDataDir() string {
 		} else if runtime.GOOS == "windows" {
 			return filepath.Join(home, "AppData", "Roaming", "org.vechain.thor")
 		} else {
-			return filepath.Join(home, ".org.vechain.thor")
+			return filepath.Join(home, "-.org.vechain.thor")
 		}
 	}
 	// As we cannot guess a stable location, return empty and handle later
